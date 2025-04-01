@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= motorcycle.name %> Details</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
     <div class="container mt-4">
@@ -13,9 +13,12 @@
         <img src="<%= motorcycle.imageUrl %>" alt="<%= motorcycle.name %>" class="img-fluid">
         <ul class="list-group mt-3">
             <li class="list-group-item"><strong>Manufacturer:</strong> <%= motorcycle.manufacturer.name %></li>
+            <li class="list-group-item"><strong>Country:</strong> <%= motorcycle.manufacturer.country %></li>
+            <li class="list-group-item"><strong>Founded:</strong> <%= motorcycle.manufacturer.founded %></li>
             <li class="list-group-item"><strong>Engine Capacity:</strong> <%= motorcycle.engineCapacity %>cc</li>
             <li class="list-group-item"><strong>Category:</strong> <%= motorcycle.category %></li>
             <li class="list-group-item"><strong>Active:</strong> <%= motorcycle.isActive ? "Yes" : "No" %></li>
+            <li class="list-group-item"><strong>Release Date:</strong> <%= motorcycle.releaseDate %></li>
             <li class="list-group-item"><strong>Features:</strong> <%= motorcycle.features.join(', ') %></li>
         </ul>
     </div>

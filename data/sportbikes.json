@@ -6,7 +6,7 @@
     "engineCapacity": 998,
     "isActive": true,
     "releaseDate": "2020-05-15",
-    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/R1.png",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/sportbikes/R1.png",
     "category": "Supersport",
     "features": ["Quick Shifter", "Traction Control", "ABS"],
     "manufacturer": {
@@ -14,7 +14,7 @@
       "name": "Yamaha Motor Company",
       "country": "Japan",
       "founded": 1955,
-      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/Yamaha_Logo.png"
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/logo/Yamaha_Logo.png"
     }
   },
   {
@@ -24,7 +24,7 @@
     "engineCapacity": 998,
     "isActive": true,
     "releaseDate": "2021-03-10",
-    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/zx10r.png",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/sportbikes/zx10r.png",
     "category": "Supersport",
     "features": ["Launch Control", "Cornering Management", "ABS"],
     "manufacturer": {
@@ -32,7 +32,7 @@
       "name": "Kawasaki Heavy Industries",
       "country": "Japan",
       "founded": 1896,
-      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/KawasakiLogo.png"
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/logo/KawasakiLogo.png"
     }
   },
   {
@@ -42,7 +42,7 @@
     "engineCapacity": 999,
     "isActive": true,
     "releaseDate": "2019-07-20",
-    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/CBR1000.png",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/sportbikes/CBR1000.png",
     "category": "Supersport",
     "features": ["Wheelie Control", "Selectable Torque Control", "ABS"],
     "manufacturer": {
@@ -50,7 +50,7 @@
       "name": "Honda Motor Co., Ltd.",
       "country": "Japan",
       "founded": 1948,
-      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/HondaLogo.png"
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/logo/HondaLogo.png"
     }
   },
   {
@@ -60,7 +60,7 @@
     "engineCapacity": 999,
     "isActive": false,
     "releaseDate": "2018-11-05",
-    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/CBR1000.png",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/sportbikes/gsxr1000.jpg",
     "category": "Supersport",
     "features": ["Bi-directional Quick Shift", "Motion Track Brake System", "ABS"],
     "manufacturer": {
@@ -68,7 +68,7 @@
       "name": "Suzuki Motor Corporation",
       "country": "Japan",
       "founded": 1909,
-      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/SuzukiLogo.png"
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/logo/SuzukiLogo.png"
     }
   },
   {
@@ -78,7 +78,7 @@
     "engineCapacity": 999,
     "isActive": true,
     "releaseDate": "2022-01-15",
-    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/s1000rr.png",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/sportbikes/s1000rr.png",
     "category": "Supersport",
     "features": ["Dynamic Traction Control", "Riding Modes Pro", "ABS"],
     "manufacturer": {
@@ -86,7 +86,7 @@
       "name": "BMW Motorrad",
       "country": "Germany",
       "founded": 1923,
-      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/BMWLogo.png"
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/logo/BMWLogo.png"
     }
   },
   {
@@ -96,7 +96,7 @@
     "engineCapacity": 1103,
     "isActive": false,
     "releaseDate": "2021-09-30",
-    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/panigale_V4.png",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/sportbikes/panigale_V4.png",
     "category": "Supersport",
     "features": ["Slide Control", "Power Launch", "ABS"],
     "manufacturer": {
@@ -104,7 +104,7 @@
       "name": "Ducati Motor Holding S.p.A.",
       "country": "Italy",
       "founded": 1926,
-      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/DucatiLogo.png"
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/logo/DucatiLogo.png"
     }
   },
   {
@@ -114,7 +114,7 @@
     "engineCapacity": 1099,
     "isActive": true,
     "releaseDate": "2020-06-25",
-    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/rsv4.png",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/sportbikes/rsv4.png",
     "category": "Supersport",
     "features": ["Aprilia Performance Ride Control", "Wheelie Control", "ABS"],
     "manufacturer": {
@@ -122,7 +122,7 @@
       "name": "Aprilia",
       "country": "Italy",
       "founded": 1945,
-      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/ApriliaLogo.png"
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/logo/ApriliaLogo.png"
     }
   },
   {
@@ -132,7 +132,7 @@
     "engineCapacity": 998,
     "isActive": false,
     "releaseDate": "2019-04-10",
-    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/Agusta_F4.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/sportbikes/Agusta_F4.jpg",
     "category": "Supersport",
     "features": ["Traction Control", "Riding Modes", "ABS"],
     "manufacturer": {
@@ -140,7 +140,7 @@
       "name": "MV Agusta",
       "country": "Italy",
       "founded": 1945,
-      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/MVAgustaLogo.png"
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/logo/MVAgustaLogo.png"
     }
   },
   {
@@ -150,7 +150,7 @@
     "engineCapacity": 675,
     "isActive": true,
     "releaseDate": "2018-08-15",
-    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/Daytona675.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/sportbikes/Daytona675.jpg",
     "category": "Supersport",
     "features": ["Quick Shifter", "Ride-by-Wire", "ABS"],
     "manufacturer": {
@@ -158,7 +158,7 @@
       "name": "Triumph Motorcycles Ltd",
       "country": "United Kingdom",
       "founded": 1983,
-      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/TriumphLogo.png"
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/logo/TriumphLogo.png"
     }
   },
   {
@@ -168,7 +168,7 @@
     "engineCapacity": 373,
     "isActive": true,
     "releaseDate": "2021-11-20",
-    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/RC390.png",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/sportbikes/RC390.png",
     "category": "Supersport",
     "features": ["Supermoto ABS", "Ride-by-Wire", "ABS"],
     "manufacturer": {
@@ -176,7 +176,7 @@
       "name": "KTM AG",
       "country": "Austria",
       "founded": 1934,
-      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/KTMLogo.png"
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes-rev/refs/heads/main/public/images/logo/KTMLogo.png"
     }
   }
 ]
