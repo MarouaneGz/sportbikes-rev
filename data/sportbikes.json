@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Yamaha YZF-R1",
+    "description": "De Yamaha YZF-R1 is een supersportmotorfiets die bekend staat om zijn snelheid en wendbaarheid.",
+    "engineCapacity": 998,
+    "isActive": true,
+    "releaseDate": "2020-05-15",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/R1.png",
+    "category": "Supersport",
+    "features": ["Quick Shifter", "Traction Control", "ABS"],
+    "manufacturer": {
+      "id": 101,
+      "name": "Yamaha Motor Company",
+      "country": "Japan",
+      "founded": 1955,
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/Yamaha_Logo.png"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Kawasaki Ninja ZX-10R",
+    "description": "De Kawasaki Ninja ZX-10R is een krachtige motorfiets die vaak wordt gebruikt in races.",
+    "engineCapacity": 998,
+    "isActive": true,
+    "releaseDate": "2021-03-10",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/zx10r.png",
+    "category": "Supersport",
+    "features": ["Launch Control", "Cornering Management", "ABS"],
+    "manufacturer": {
+      "id": 102,
+      "name": "Kawasaki Heavy Industries",
+      "country": "Japan",
+      "founded": 1896,
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/KawasakiLogo.png"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Honda CBR1000RR",
+    "description": "De Honda CBR1000RR, ook bekend als de Fireblade, is een iconische sportmotor.",
+    "engineCapacity": 999,
+    "isActive": true,
+    "releaseDate": "2019-07-20",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/CBR1000.png",
+    "category": "Supersport",
+    "features": ["Wheelie Control", "Selectable Torque Control", "ABS"],
+    "manufacturer": {
+      "id": 103,
+      "name": "Honda Motor Co., Ltd.",
+      "country": "Japan",
+      "founded": 1948,
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/HondaLogo.png"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Suzuki GSX-R1000",
+    "description": "De Suzuki GSX-R1000 is een sportmotor die bekend staat om zijn prestaties en betrouwbaarheid.",
+    "engineCapacity": 999,
+    "isActive": true,
+    "releaseDate": "2018-11-05",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/CBR1000.png",
+    "category": "Supersport",
+    "features": ["Bi-directional Quick Shift", "Motion Track Brake System", "ABS"],
+    "manufacturer": {
+      "id": 104,
+      "name": "Suzuki Motor Corporation",
+      "country": "Japan",
+      "founded": 1909,
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/SuzukiLogo.png"
+    }
+  },
+  {
+    "id": 5,
+    "name": "BMW S1000RR",
+    "description": "De BMW S1000RR is een high-performance sportmotor met geavanceerde technologie.",
+    "engineCapacity": 999,
+    "isActive": true,
+    "releaseDate": "2022-01-15",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/s1000rr.png",
+    "category": "Supersport",
+    "features": ["Dynamic Traction Control", "Riding Modes Pro", "ABS"],
+    "manufacturer": {
+      "id": 105,
+      "name": "BMW Motorrad",
+      "country": "Germany",
+      "founded": 1923,
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/BMWLogo.png"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Ducati Panigale V4",
+    "description": "De Ducati Panigale V4 is een Italiaanse sportmotor met een uniek design en krachtige prestaties.",
+    "engineCapacity": 1103,
+    "isActive": true,
+    "releaseDate": "2021-09-30",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/panigale_V4.png",
+    "category": "Supersport",
+    "features": ["Slide Control", "Power Launch", "ABS"],
+    "manufacturer": {
+      "id": 106,
+      "name": "Ducati Motor Holding S.p.A.",
+      "country": "Italy",
+      "founded": 1926,
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/DucatiLogo.png"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Aprilia RSV4",
+    "description": "De Aprilia RSV4 is een race-geïnspireerde sportmotor met een V4-motor.",
+    "engineCapacity": 1099,
+    "isActive": true,
+    "releaseDate": "2020-06-25",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/rsv4.png",
+    "category": "Supersport",
+    "features": ["Aprilia Performance Ride Control", "Wheelie Control", "ABS"],
+    "manufacturer": {
+      "id": 107,
+      "name": "Aprilia",
+      "country": "Italy",
+      "founded": 1945,
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/ApriliaLogo.png"
+    }
+  },
+  {
+    "id": 8,
+    "name": "MV Agusta F4",
+    "description": "De MV Agusta F4 is een luxe sportmotor met een iconisch design en krachtige prestaties.",
+    "engineCapacity": 998,
+    "isActive": true,
+    "releaseDate": "2019-04-10",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/Agusta_F4.jpg",
+    "category": "Supersport",
+    "features": ["Traction Control", "Riding Modes", "ABS"],
+    "manufacturer": {
+      "id": 108,
+      "name": "MV Agusta",
+      "country": "Italy",
+      "founded": 1945,
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/MVAgustaLogo.png"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Triumph Daytona 675",
+    "description": "De Triumph Daytona 675 is een Britse sportmotor met een driecilindermotor.",
+    "engineCapacity": 675,
+    "isActive": true,
+    "releaseDate": "2018-08-15",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/Daytona675.jpg",
+    "category": "Supersport",
+    "features": ["Quick Shifter", "Ride-by-Wire", "ABS"],
+    "manufacturer": {
+      "id": 109,
+      "name": "Triumph Motorcycles Ltd",
+      "country": "United Kingdom",
+      "founded": 1983,
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/TriumphLogo.png"
+    }
+  },
+  {
+    "id": 10,
+    "name": "KTM RC 390",
+    "description": "De KTM RC 390 is een lichte sportmotor die ideaal is voor beginnende rijders.",
+    "engineCapacity": 373,
+    "isActive": true,
+    "releaseDate": "2021-11-20",
+    "imageUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/sportbikes/RC390.png",
+    "category": "Supersport",
+    "features": ["Supermoto ABS", "Ride-by-Wire", "ABS"],
+    "manufacturer": {
+      "id": 110,
+      "name": "KTM AG",
+      "country": "Austria",
+      "founded": 1934,
+      "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/KTMLogo.png"
+    }
+  }
+]

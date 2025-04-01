@@ -1,0 +1,72 @@
+[
+  {
+    "id": 101,
+    "name": "Yamaha Motor Company",
+    "country": "Japan",
+	"founded": 1955,
+    "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/Yamaha_Logo.png"
+  },
+  {
+    "id": 102,
+    "name": "Kawasaki Heavy Industries",
+    "country": "Japan",
+	"founded": 1896,
+    "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/KawasakiLogo.png"
+  },
+  {
+    "id": 103,
+    "name": "Honda Motor Co., Ltd.",
+    "country": "Japan",
+	"founded": 1948,
+    "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/HondaLogo.png"
+  },
+  {
+    "id": 104,
+    "name": "Suzuki Motor Corporation",
+    "country": "Japan",
+	"founded": 1909,
+    "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/SuzukiLogo.png"
+  },
+  {
+    "id": 105,
+    "name": "BMW Motorrad",
+    "country": "Germany",
+	"founded": 1923,
+    "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/BMWLogo.png"
+  },
+  {
+    "id": 106,
+    "name": "Ducati Motor Holding S.p.A.",
+    "country": "Italy",
+	"founded": 1926,
+    "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/DucatiLogo.png"
+  },
+  {
+    "id": 107,
+    "name": "Aprilia",
+    "country": "Italy",
+	"founded": 1945,
+    "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/ApriliaLogo.png"
+  },
+  {
+    "id": 108,
+    "name": "MV Agusta",
+    "country": "Italy",
+	"founded": 1945,
+    "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/MVAgustaLogo.png"
+  },
+  {
+    "id": 109,
+    "name": "Triumph Motorcycles Ltd",
+    "country": "United Kingdom",
+	"founded": 1983,
+    "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/TriumphLogo.png"
+  },
+  {
+    "id": 110,
+    "name": "KTM AG",
+    "country": "Austria",
+	"founded": 1934,
+    "logoUrl": "https://raw.githubusercontent.com/MarouaneGz/sportbikes/refs/heads/main/logo/KTMLogo.png"
+  }
+]
