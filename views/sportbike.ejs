@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= motorcycle.name %> Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1><%= motorcycle.name %></h1>
+        <img src="<%= motorcycle.imageUrl %>" alt="<%= motorcycle.name %>" class="img-fluid">
+        <ul class="list-group mt-3">
+            <li class="list-group-item"><strong>Manufacturer:</strong> <%= motorcycle.manufacturer.name %></li>
+            <li class="list-group-item"><strong>Engine Capacity:</strong> <%= motorcycle.engineCapacity %>cc</li>
+            <li class="list-group-item"><strong>Category:</strong> <%= motorcycle.category %></li>
+            <li class="list-group-item"><strong>Active:</strong> <%= motorcycle.isActive ? "Yes" : "No" %></li>
+            <li class="list-group-item"><strong>Features:</strong> <%= motorcycle.features.join(', ') %></li>
+        </ul>
+    </div>
+</body>
+</html>
