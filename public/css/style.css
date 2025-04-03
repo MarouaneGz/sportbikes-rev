@@ -576,26 +576,13 @@
     font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-    .manufacturer-detail .manufacturer-image-container {
-        margin-bottom: 2rem;
-    }
-    
-    .manufacturer-detail .manufacturer-logo {
-        height: 40px;
-    }
+.error-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
 }
 
-@media (max-width: 768px) {
-    .motorcycle-detail .card-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .motorcycle-detail .manufacturer-logo {
-        margin-top: 1rem;
-    }
-}
 
         @media (max-width: 768px) {
             .sort-group {
@@ -646,5 +633,22 @@
             .view-btn {
                 width: 100%;
                 text-align: center;
+            }
+
+            .manufacturer-detail .manufacturer-image-container {
+                margin-bottom: 2rem;
+            }
+            
+            .manufacturer-detail .manufacturer-logo {
+                height: 40px;
+            }
+            
+            .motorcycle-detail .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .motorcycle-detail .manufacturer-logo {
+                margin-top: 1rem;
             }
         }

@@ -75,7 +75,7 @@ app.get('/motorcycle/:id', async (req: Request, res: Response) => {
       return res.status(404).render('error', { message: 'Manufacturer not found' });
     }
 
-    res.render('detailMotorcycle', { 
+    res.render('detailMotorcycles', { 
       motorcycle,
       manufacturer
     });
@@ -88,7 +88,7 @@ app.get('/motorcycle/:id', async (req: Request, res: Response) => {
   }
 });
 
-app.get('/manufacturer/:id', async (req: Request, res: Response) => {
+app.get('/manufacturers/:id', async (req: Request, res: Response) => {
   try {
     const manufacturerId = Number(req.params.id);
     
@@ -112,7 +112,7 @@ app.get('/manufacturer/:id', async (req: Request, res: Response) => {
 
     res.render('detailManufacturers', {
       manufacturer,
-      motorcycles: manufacturerMotorcycles
+      motorcycles
     });
     
   } catch (error) {
