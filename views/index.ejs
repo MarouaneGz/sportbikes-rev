@@ -4,38 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motorcycle Gallery</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container mt-4">
-        <h1>Motorcycle Gallery</h1>
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Manufacturer</th>
-                    <th>Engine Capacity</th>
-                    <th>Category</th>
-                    <th>Active</th>
-                    <th>Release Date</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
+    <%- include('partials/header'); %>
+
+    <main class="main-container">
+        <div class="page-title">
+            <h1>Motorcycle Gallery</h1>
+            <p>Discover the world's finest motorcycles</p>
+        </div>
+
+        <div class="search-container">
+            <form method="get" action="/" class="search-form">
+                <input type="text" name="search" class="search-input" 
+                       placeholder="Search for motorcycles..." value="<%= searchQuery %>">
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+        <div class="sort-group">
+            <form method="get" action="/" id="sortForm">
+              <div class="sort-control">
+                <label for="sortBy">Sort by:</label>
+                <select name="sortBy" id="sortBy" class="sort-select" onchange="document.getElementById('sortForm').submit()">
+                  <option value="name" <%= sortBy === 'name' ? 'selected' : '' %>>Name</option>
+                  <option value="date" <%= sortBy === 'date' ? 'selected' : '' %>>Release Date</option>
+                  <option value="engine" <%= sortBy === 'engine' ? 'selected' : '' %>>Engine Capacity</option>
+                </select>
+              </div>
+              
+              <div class="sort-control">
+                <label for="sortOrder">Order:</label>
+                <select name="sortOrder" id="sortOrder" class="sort-order" onchange="document.getElementById('sortForm').submit()">
+                  <option value="asc" <%= sortOrder === 'asc' ? 'selected' : '' %>>Ascending</option>
+                  <option value="desc" <%= sortOrder === 'desc' ? 'selected' : '' %>>Descending</option>
+                </select>
+              </div>
+              
+              <!-- Hidden input to preserve search query -->
+              <% if (searchQuery) { %>
+                <input type="hidden" name="search" value="<%= searchQuery %>">
+              <% } %>
+            </form>
+          </div>
+        
+
+        <div class="cards-grid">
+            <% if (motorcycles.length === 0) { %>
+                <div class="no-results">
+                    <p>No motorcycles found matching "<%= searchQuery %>"</p>
+                </div>
+            <% } else { %>
                 <% motorcycles.forEach(motorcycle => { %>
-                    <tr>
-                        <td><%= motorcycle.name %></td>
-                        <td><%= motorcycle.manufacturer.name %></td>
-                        <td><%= motorcycle.engineCapacity %>cc</td>
-                        <td><%= motorcycle.category %></td>
-                        <td><%= motorcycle.isActive ? "Yes" : "No" %></td>
-                        <td><%= motorcycle.releaseDate %></td>
-                        <td><a href="/motorcycle/<%= motorcycle.id %>" class="btn btn-primary">View Details</a></td>
-                    </tr>
+                    <div class="card">
+                        <div class="card-img-container">
+                          <img src="<%= motorcycle.imageUrl %>" class="card-img-top" alt="<%= motorcycle.name %>">
+                        </div>
+                        
+                        <div class="card-body">
+                          <div class="card-header">
+                            <h3 class="card-title"><%= motorcycle.name %></h3>
+                            <img src="<%= motorcycle.manufacturer.logoUrl %>" 
+                                 class="manufacturer-logo" 
+                                 alt="<%= motorcycle.manufacturer.name %> logo">
+                          </div>
+                          
+                          <p class="manufacturer-name"><%= motorcycle.manufacturer.name %></p>
+                          
+                          <div class="spec-container">
+                            <span class="supersport-badge">SUPERSPORT <%= motorcycle.engineCapacity %>cc</span>
+                          </div>
+                          
+                          <div class="features-list">
+                            <% motorcycle.features.slice(0, 3).forEach(feature => { %>
+                              <span class="feature-pill"><%= feature %></span>
+                            <% }) %>
+                          </div>
+                          
+                          <div class="card-footer">
+                            <span class="release-date">Released: <%= motorcycle.releaseDate %></span>
+                            <a href="/motorcycle/<%= motorcycle.id %>" class="view-btn">View Details</a>
+                          </div>
+                        </div>
+                      </div>
                 <% }) %>
-            </tbody>
-        </table>
-    </div>
+            <% } %>
+        </div>
+    </main>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

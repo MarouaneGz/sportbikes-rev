@@ -77,7 +77,7 @@ function filterManufacturerById(input: string) {
 
 function filterMotorcycleById(input: string) {
   const id = parseInt(input.trim());
-  const motorcycle = motorcycles.find((m: Motorcycle) => m.id === id);
+  const motorcycle = motorcycles.find(m => m.id === id);
 
   if (!motorcycle) {
     console.log(`\nNo motorcycle found with ID: ${id}`);
@@ -86,7 +86,7 @@ function filterMotorcycleById(input: string) {
  ${motorcycle.name} (ID: ${motorcycle.id})
   - Description: ${motorcycle.description}
   - Engine Capacity: ${motorcycle.engineCapacity}cc
-  - Active: ${motorcycle.isActive ? "Yes" : "No"}
+  - Status: ${motorcycle.motorcycleStatus ? "Yes" : "No"}
   - Release Date: ${motorcycle.releaseDate}
   - Category: ${motorcycle.category}
   - Features: ${motorcycle.features.join(", ")}

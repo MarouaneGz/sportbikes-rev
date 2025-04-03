@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= manufacturer.name %> | Motorcycle Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <%- include('partials/header'); %>
+
+    <main class="main-container">
+        <div class="manufacturer-detail card">
+            <div class="card-header bg-primary text-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1 class="mb-0"><%= manufacturer.name %></h1>
+                    <img src="<%= manufacturer.logoUrl %>" 
+                         alt="<%= manufacturer.name %> logo" 
+                         class="manufacturer-logo">
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="manufacturer-image-container">
+                            <img src="<%= manufacturer.logoUrl %>" 
+                                 alt="<%= manufacturer.name %>" 
+                                 class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="manufacturer-info">
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <span class="fw-bold">Country:</span>
+                                    <span><%= manufacturer.country %></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <span class="fw-bold">Founded:</span>
+                                    <span><%= manufacturer.founded %></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <span class="fw-bold">Years Active:</span>
+                                    <span><%= manufacturer.founded %> - Present</span>
+                                </li>
+                            </ul>
+
+                            <h3 class="text-primary mb-3">About <%= manufacturer.name %></h3>
+                            <p class="manufacturer-description"><%= manufacturer.description || 'No description available' %></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manufacturer-models mt-5">
+                    <h3 class="text-primary mb-4">Current Models</h3>
+                    <% if (motorcycles.length > 0) { %>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <% motorcycles.forEach(motorcycle => { %>
+                                <div class="col">
+                                    <div class="model-card card h-100">
+                                        <img src="<%= motorcycle.imageUrl %>" 
+                                             class="card-img-top" 
+                                             alt="<%= motorcycle.name %>">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><%= motorcycle.name %></h5>
+                                            <div class="card-text">
+                                                <span class="badge bg-secondary mb-2"><%= motorcycle.category %></span>
+                                                <p class="engine-capacity"><%= motorcycle.engineCapacity %>cc</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-transparent">
+                                            <a href="/motorcycle/<%= motorcycle.id %>" class="btn btn-sm btn-outline-primary">
+                                                View Details
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% }) %>
+                        </div>
+                    <% } else { %>
+                        <div class="alert alert-info">
+                            No current models available for this manufacturer.
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+
+            <div class="card-footer bg-light">
+                <a href="/" class="btn btn-primary">
+                    <i class="bi bi-arrow-left"></i> Back to Gallery
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</body>
+</html>

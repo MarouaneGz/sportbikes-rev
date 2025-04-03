@@ -11,7 +11,7 @@ export interface Manufacturer {
     name: string;
     description: string;
     engineCapacity: number;
-    isActive: boolean;
+    motorcycleStatus: boolean;
     releaseDate: string;
     imageUrl: string;
     category: string;
