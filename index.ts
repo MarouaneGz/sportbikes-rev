@@ -12,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 type SortField = 'name' | 'date' | 'engine' | 'manufacturer' | 'category';
+type ManufacturerSortField = 'name' | 'country' | 'founded';
 type SortOrder = 'asc' | 'desc';
 
 
@@ -88,7 +89,7 @@ app.get('/motorcycle/:id', async (req: Request, res: Response) => {
   }
 });
 
-app.get('/manufacturers/:id', async (req: Request, res: Response) => {
+app.get('/manufacturer/:id', async (req: Request, res: Response) => {
   try {
     const manufacturerId = Number(req.params.id);
     
@@ -152,6 +153,70 @@ function sortMotorcycles(motorcycles: Motorcycle[], sortBy: SortField, sortOrder
   });
 }
 
+app.get('/manufacturer', async (req: Request, res: Response) => {
+  try {
+    const searchQuery = req.query.search?.toString().toLowerCase() || '';
+    const sortBy = isValidManufacturerSortField(req.query.sortBy) 
+      ? req.query.sortBy as ManufacturerSortField 
+      : 'name';
+    const sortOrder = isValidSortOrder(req.query.sortOrder)
+      ? req.query.sortOrder as SortOrder
+      : 'asc';
+    
+    let manufacturers = await fetchManufacturers();
+
+    // Filtering
+    if (searchQuery) {
+      manufacturers = manufacturers.filter(manufacturer =>
+        manufacturer.name.toLowerCase().includes(searchQuery) ||
+        manufacturer.country.toLowerCase().includes(searchQuery) ||
+        manufacturer.founded.toString().includes(searchQuery)
+      );
+    }
+
+    // Sorting
+    manufacturers = sortManufacturers(manufacturers, sortBy, sortOrder);
+
+    res.render('manufacturerList', { 
+      manufacturers,
+      searchQuery,
+      sortBy,
+      sortOrder,
+      title: 'All Manufacturers'
+    });
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).render('error', { 
+      message: 'Error loading manufacturers list' 
+    });
+  }
+});
+
+function sortManufacturers(manufacturers: Manufacturer[], sortBy: ManufacturerSortField, sortOrder: SortOrder): Manufacturer[] {
+  return [...manufacturers].sort((a, b) => {
+    let comparison = 0;
+    
+    switch (sortBy) {
+      case 'name':
+        comparison = a.name.localeCompare(b.name);
+        break;
+      case 'country':
+        comparison = a.country.localeCompare(b.country);
+        break;
+      case 'founded':
+        comparison = a.founded - b.founded;
+        break;
+      default:
+        comparison = a.name.localeCompare(b.name);
+    }
+
+    return sortOrder === 'desc' ? -comparison : comparison;
+  });
+}
+
+function isValidManufacturerSortField(value: any): value is ManufacturerSortField {
+  return ['name', 'country', 'founded'].includes(value);
+}
 
 function isValidSortField(value: any): value is SortField {
   return ['name', 'date', 'engine', 'manufacturer', 'category'].includes(value);
